@@ -1,40 +1,75 @@
 body {
+
     font-family: Arial;
+    margin: 0;
     background: #f2f2f2;
-    text-align: center;
+
 }
 
 
 header {
+
     background: #2563eb;
-    color: white;
-    padding: 30px;
+    color:white;
+    padding:20px;
+    text-align:center;
+
 }
 
 
-.container {
-    margin: 30px;
+nav a {
+
+    color:white;
+    margin:10px;
+    text-decoration:none;
+
 }
 
 
-a {
-    display: block;
-    width: 300px;
-    margin: 15px auto;
-    padding: 15px;
-    background: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 10px;
+
+section {
+
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+
 }
 
 
-a:hover {
-    background: #2563eb;
-    color: white;
+
+button {
+
+    padding:10px 20px;
+    cursor:pointer;
+
 }
 
 
-footer {
-    margin-top: 50px;
+
+input,
+textarea {
+
+    display:block;
+    width:300px;
+    margin:10px 0;
+    padding:10px;
+
+}
+
+
+
+textarea {
+
+    height:100px;
+
+}
+
+
+
+#content {
+
+    background:#e0f2fe;
+    padding:15px;
+
 }
