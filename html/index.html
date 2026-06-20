@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyJS Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>MyJS Website</h1>
+
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+</header>
+
+
+<section id="home">
+
+    <h2>Chào mừng đến với MyJS</h2>
+
+    <button id="btnShow">
+        Ẩn / Hiện nội dung
+    </button>
+
+    <p id="content">
+        Đây là website tổng hợp các bài thực hành JavaScript.
+        HTML tạo cấu trúc, CSS làm giao diện,
+        JavaScript xử lý hành vi.
+    </p>
+
+</section>
+
+
+
+<section id="about">
+
+    <h2>Giới thiệu</h2>
+
+    <p>
+        MyJS là dự án nhỏ giúp luyện tập JavaScript:
+        biến, vòng lặp, DOM và Event.
+    </p>
+
+</section>
+
+
+
+<section id="contact">
+
+    <h2>Form liên hệ</h2>
+
+
+    <form id="contactForm">
+
+        <input 
+        type="text" 
+        id="name"
+        placeholder="Nhập tên">
+
+
+        <input 
+        type="email" 
+        id="email"
+        placeholder="Nhập email">
+
+
+        <textarea 
+        id="message"
+        placeholder="Nội dung"></textarea>
+
+
+        <button type="submit">
+            Gửi
+        </button>
+
+
+    </form>
+
+
+    <p id="result"></p>
+
+
+</section>
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
