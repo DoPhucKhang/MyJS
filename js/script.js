@@ -1,70 +1,85 @@
-// Ẩn hiện nội dung
+// NÚT ẨN HIỆN
 
 const btnShow = document.getElementById("btnShow");
 
 const content = document.getElementById("content");
 
 
-btnShow.addEventListener("click", function(){
+btnShow.onclick = function(){
+
 
     if(content.style.display === "none"){
 
         content.style.display = "block";
 
-    }else{
+    }
+
+    else{
 
         content.style.display = "none";
 
     }
 
-});
+
+};
 
 
 
 
-// Kiểm tra form
+
+// FORM
+
 
 const form = document.getElementById("contactForm");
+
 
 const result = document.getElementById("result");
 
 
-form.addEventListener("submit", function(event){
+
+form.addEventListener("submit", function(e){
 
 
-    event.preventDefault();
+    e.preventDefault();
 
 
-    const name =
+
+    let name =
     document.getElementById("name").value;
 
 
-    const email =
+    let email =
     document.getElementById("email").value;
 
 
-    const message =
+    let message =
     document.getElementById("message").value;
 
 
 
     if(
-        name === "" ||
-        email === "" ||
-        message === ""
+        name == "" ||
+        email == "" ||
+        message == ""
     ){
 
-        result.textContent =
-        "Vui lòng nhập đầy đủ thông tin!";
+
+        result.innerHTML =
+        "Chưa nhập đủ thông tin";
+
 
         result.style.color="red";
 
 
-    }else{
+    }
 
 
-        result.textContent =
-        "Gửi liên hệ thành công!";
+    else{
+
+
+        result.innerHTML =
+        "Gửi thành công";
+
 
         result.style.color="green";
 
